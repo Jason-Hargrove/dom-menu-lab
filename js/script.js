@@ -1,18 +1,3 @@
-// let mainEl = document.querySelector('main');
-// const h1 = document.createElement('h1');
-// const mainTitle = h1.innerHTML = 'SEI Rocks!',
-//
-// // mainEl.style.backgroundColor = '#4a4e4d';
-//
-// mainEl.style.backgroundColor = 'var(--main-bg)';
-//
-// mainEl.setAttribute('class', 'main-thing');
-//
-// mainEl.appendChild(mainTitle);
-//
-// console.log(mainEl);
-
-
 // Tasks 1.0
 
 const mainEl = document.querySelector('main')
@@ -29,7 +14,53 @@ mainEl.innerHTML = '<h1>SEI Rocks!</h1>'
 
 mainEl.classList.add('flex-ctr');
 
-blah blah blah
+// Task 2.0
+
+const topMenuEl = document.querySelector('#top-menu');
+
+// Task 2.1
+
+topMenuEl.style.height = '100%';
+
+// Task 2.2
+
+topMenuEl.style.backgroundColor = 'var(--top-menu-bg)';
+
+// Task 2.3
+
+topMenuEl.classList.add('flex-around');
+
+// Task 3.0
+
+// Menu data structure
+var menuLinks = [
+  {text: 'about', href: '/about'},
+  {text: 'catalog', href: '/catalog'},
+  {text: 'orders', href: '/orders'},
+  {text: 'account', href: '/account'},
+];
+
+// Task 3.1
+for(let menuLink of menuLinks) {
+  const zelda = document.createElement('a');
+  zelda.setAttribute('href', menuLink.href);
+  zelda.textContent = menuLink.text;
+  topMenuEl.appendChild(zelda);
+	// console.log(topMenuEl);
+}
 
 
-bkdsjfldkjflsjlk
+
+
+
+
+
+
+
+
+
+
+
+
+
+// console.log(topMenuEl)
