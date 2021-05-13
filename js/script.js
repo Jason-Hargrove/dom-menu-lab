@@ -48,19 +48,3 @@ for(let menuLink of menuLinks) {
   topMenuEl.appendChild(zelda);
 	// console.log(topMenuEl);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// console.log(topMenuEl)
